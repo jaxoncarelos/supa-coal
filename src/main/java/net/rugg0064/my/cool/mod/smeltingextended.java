@@ -33,10 +33,10 @@ public class smeltingextended implements ModInitializer {
 				6
 			))
 			.range(new RangeDecoratorConfig(
-					UniformHeightProvider.create(YOffset.aboveBottom(0), YOffset.fixed(64))
+					UniformHeightProvider.create(YOffset.aboveBottom(0), YOffset.fixed(14))
 			))
 			.spreadHorizontally()
-			.repeat(30);
+			.repeat(3);
 
 	@Override
 	public void onInitialize() {
