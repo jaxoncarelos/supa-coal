@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "coolmod:super_coal_block"
+      "item": "smeltingextended:super_coal_block"
     }
   ],
   "result": {
-    "item": "coolmod:super_coal",
+    "item": "smeltingextended:super_coal",
     "count": 9
   }
 }

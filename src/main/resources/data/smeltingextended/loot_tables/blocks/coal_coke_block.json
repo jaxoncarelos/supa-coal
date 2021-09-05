@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "coolmod:coal_coke_block"
+          "name": "smeltingextended:coal_coke_block"
         }
       ],
       "conditions": [

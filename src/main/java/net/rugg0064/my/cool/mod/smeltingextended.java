@@ -19,7 +19,7 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 
-public class MyCoolMod implements ModInitializer {
+public class smeltingextended implements ModInitializer {
 	
 	public static final CoalCoke COAL_COKE = new CoalCoke(new Item.Settings().group(ItemGroup.MISC));
 	public static final CoalCokeBlock COAL_COKE_BLOCK = new CoalCokeBlock();
@@ -45,32 +45,32 @@ public class MyCoolMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		//Register coal ore block
-		Registry.register(Registry.BLOCK, new Identifier("coolmod", "coal_coke_ore"), COAL_COKE_ORE);
+		Registry.register(Registry.BLOCK, new Identifier("smeltingextended", "coal_coke_ore"), COAL_COKE_ORE);
 		//Register coal ore block item
-		Registry.register(Registry.ITEM, new Identifier("coolmod", "coal_coke_ore"), new BlockItem(COAL_COKE_ORE, new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("smeltingextended", "coal_coke_ore"), new BlockItem(COAL_COKE_ORE, new Item.Settings().group(ItemGroup.MISC)));
 
 		//Registers the generation on initilization
 		RegistryKey<ConfiguredFeature<?, ?>> superCoalOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-				new Identifier("coolmod", "super_cool_overworld"));
+				new Identifier("smeltingextended", "super_cool_overworld"));
 		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, superCoalOverworld.getValue(), SUPER_COAL_OVERWORLD);
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, superCoalOverworld);
 
 		//Register the super coal block item
-		Registry.register(Registry.ITEM, new Identifier("coolmod", "coal_coke"), COAL_COKE);
+		Registry.register(Registry.ITEM, new Identifier("smeltingextended", "coal_coke"), COAL_COKE);
 		//Register the super coal block item as a fuel
 		FuelRegistry.INSTANCE.add(COAL_COKE, 20000);
 
 		//Register the super coal block
-		Registry.register(Registry.BLOCK, new Identifier("coolmod", "coal_coke_block"), COAL_COKE_BLOCK);
+		Registry.register(Registry.BLOCK, new Identifier("smeltingextended", "coal_coke_block"), COAL_COKE_BLOCK);
 		//Register the super coal block item
-		Registry.register(Registry.ITEM, new Identifier("coolmod", "coal_coke_block"), new BlockItem(COAL_COKE_BLOCK, new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("smeltingextended", "coal_coke_block"), new BlockItem(COAL_COKE_BLOCK, new Item.Settings().group(ItemGroup.MISC)));
 		//Register the super coal block item as a fuel
 		FuelRegistry.INSTANCE.add(COAL_COKE_BLOCK, 20000 * 9);
 
 		//Register the super coal furnace block
-		Registry.register(Registry.BLOCK, new Identifier("coolmod", "oven_bricks"), OVEN_BRICKS);
+		Registry.register(Registry.BLOCK, new Identifier("smeltingextended", "oven_bricks"), OVEN_BRICKS);
 		//Register the super coal furnace item
-		Registry.register(Registry.ITEM, new Identifier("coolmod", "oven_bricks"), new BlockItem(OVEN_BRICKS, new Item.Settings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("smeltingextended", "oven_bricks"), new BlockItem(OVEN_BRICKS, new Item.Settings().group(ItemGroup.MISC)));
 
 	}
 }

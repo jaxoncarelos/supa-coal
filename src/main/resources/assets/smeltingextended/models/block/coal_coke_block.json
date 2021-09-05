@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "coolmod:block/oven_bricks"
+    "all": "smeltingextended:block/coal_coke_block"
   }
 }

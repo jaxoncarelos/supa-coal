@@ -7,11 +7,11 @@
   ],
   "key": {
     "S": {
-      "item": "coolmod:super_coal"
+      "item": "smeltingextended:super_coal"
     }
   },
   "result": {
-    "item": "coolmod:super_coal_block",
+    "item": "smeltingextended:super_coal_block",
     "count": 1
   }
 }

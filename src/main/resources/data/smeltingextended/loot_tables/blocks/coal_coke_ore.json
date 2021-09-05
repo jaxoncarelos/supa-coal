@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "coolmod:oven_bricks"
+          "name": "smeltingextended:coal_coke_ore"
         }
       ],
       "conditions": [
